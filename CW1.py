@@ -48,7 +48,18 @@ def logic():
                     print("\n.....Your progression outcome is Do not progress Module retriever.....\n")
     else:
         print("\n~~~~~~~~Total incorrect~~~~~~~~\n")
-        restart()  
+        restart()
+
+def restart():#restart the program
+    try:
+        select=int(input("<.....Enter number 1 for you want to check another progrssion.....>\n<.....Enter number 2 for Exit the program.....>\n"))
+        if select==1:
+            inputs()
+        elif select==2:
+            execute()
+    except:
+        print("Invalid selection")
+        restart()
 
 def execute():
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
